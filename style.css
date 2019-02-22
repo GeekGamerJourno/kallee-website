@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
+
+[class*="grid-"], [class*="grid_"], [class~="grid"] {
+	margin: 0;
+  /* this takes the margin off all classes of grid or classes containg a grid. the col one above does the same for col. that overides gridlex's defaut styling because my css stylesheet is below the gridlex in my head */
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
