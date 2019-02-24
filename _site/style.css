@@ -1,0 +1,114 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
+
+[class*="grid-"], [class*="grid_"], [class~="grid"] {
+	margin: 0;
+  /* this takes the margin off all classes of grid or classes containg a grid. the col one above does the same for col. that overides gridlex's defaut styling because my css stylesheet is below the gridlex in my head */
+}
+/* universal styles */
+
+body {
+  text-align: center;
+  background-color: #040b0e; /* add this as a fallback in case your image doesn't load */
+  background-image: url('images/bg-image.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  padding: 3%;
+  min-height: 100vh
+}
+p{
+  padding: 3%;
+}
+
+img {
+  border-radius: 50%;
+  width: 40%;
+  padding: 1%;
+}
+
+/* typography */
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #AA8C2C;
+  font-size: 4rem;
+  padding: 1% 5%;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: #AA8C2C;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #aa8c2c;
+  /* border-radius: 5px;
+  border: 1px solid #aa8c2c; */
+  padding: 2rem;
+  /* display: inline-block; */
+  /* text-align: center; */
+  /* background-color: white;
+  margin: 5px; */
+  position: relative;
+  transition:4s
+}
+a:hover{
+ color: #040b0e;
+ transition:1s;
+}
+
+a::after{
+ content: ' ';
+ position:absolute;
+ width:0;
+ border-bottom: 1px solid rgba(0, 0, 0, 0);
+ bottom:0;
+ transition:5s;
+ left:50%;
+}
+a:hover::after {
+ transition:1s;
+ width:100%;
+ left:0;
+ bottom:-0.5rem;
+ border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+/* a:hover {
+  border: 1px solid #040b0e;
+  color: #040b0e;
+} */
+
+.header {
+  background-color: white;
+  width: 60%;
+  padding: 2% 8%;
+  margin: auto;
+}
+
+hr {
+  border: 1px solid #aa8c2c;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.description  {
+  padding: 5%;
+}
