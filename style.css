@@ -39,7 +39,7 @@ img {
 h1 {
   font-family: 'Playfair Display', serif;
   color: #AA8C2C;
-  font-size: 4rem;
+  font-size: 4vw;
   padding: 1% 5%;
   font-weight: 400;
 }
@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-family: 'Lato', sans-serif;
   color: #AA8C2C;
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 400;
 }
 
@@ -57,7 +57,7 @@ a {
   /* border-radius: 5px;
   border: 1px solid #aa8c2c; */
   padding: 2rem;
-  /* display: inline-block; */
+  display: inline-block;
   /* text-align: center; */
   /* background-color: white;
   margin: 5px; */
@@ -82,15 +82,37 @@ a:hover::after {
  transition:1s;
  width:100%;
  left:0;
- bottom:-0.5rem;
+ bottom:-0.5rem; /*controls the line*/
  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 nav {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
+  align-items: center;
 }
 
+/* adjusts the margin of the a links on scale */
+@media only screen and (max-width: 950px) {
+   .nav-link {
+      margin: 10px;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .nav-link {
+      margin-bottom: 15px;
+   }
+   h2 {
+     font-size: 1rem;
+   }
+
+   h1 {
+     font-size: 1.5rem;
+   }
+
+}
+/* old button */
 /* a:hover {
   border: 1px solid #040b0e;
   color: #040b0e;
@@ -102,13 +124,41 @@ nav {
   padding: 2% 8%;
   margin: auto;
 }
+/* hr styling the curved end */
 
 hr {
-  border: 1px solid #aa8c2c;
   margin-bottom: 1rem;
-  width: 100%;
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: #aa8c2c;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
 }
 
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #aa8c2c;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+/* hr transition */
+.trans-grow{
+    -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: width 1s  ease-in-out;
+    width : 0%;
+}
+
+.grow{
+    width:100%;
+}
+
+/* padding for text */
 .description  {
   padding: 5%;
 }
