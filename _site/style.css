@@ -34,10 +34,10 @@ p{
   width: 40%;
   padding: 1%;
 }
-/* class for the portfolio prview image */
+/* class for the portfolio preview image */
 .preview {
-  width: 40%;
-  padding: 1%;
+  width:100%;
+  padding: 5%;
 }
 
 /* typography */
@@ -54,23 +54,47 @@ h2 {
   color: #AA8C2C;
   font-size: 2vw;
   font-weight: 400;
+  padding: 1% 5% 5%;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
   color: #AA8C2C;
-  font-size: 1vw;
+  font-size: 1.8vw;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
+  padding: 1% 5%;
 }
+/* takes the decoration off the h1 link */
+h1 a {
+  text-decoration: none;
+  color: #AA8C2C;
 }
 
+/* takes the decoration off the h3 links */
+h3 a {
+  text-decoration: none;
+  color: #AA8C2C;
+}
+
+/* makes the link blue on hover */
+h1 a:hover {
+  color: #040b0e;
+  transition:1s;
+}
+
+h3 a:hover {
+  color: #040b0e;
+  transition:1s;
+}
+
+/* this is the hover effect for the nav links  */
 a.nav-link {
   text-decoration: none;
   color: #aa8c2c;
   /* border-radius: 5px;
   border: 1px solid #aa8c2c; */
-  padding: 2rem;
+  padding: 1rem;
   display: inline-block;
   /* text-align: center; */
   /* background-color: white;
@@ -177,9 +201,4 @@ hr:before {
 
 .grow{
     width:100%;
-}
-
-/* padding for text */
-.description  {
-  padding: 5%;
 }
