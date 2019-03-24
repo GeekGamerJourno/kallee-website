@@ -130,10 +130,11 @@ hr {
   margin-bottom: 1rem;
   overflow: visible; /* For IE */
   height: 30px;
+  width:0; /*this has the line grow from the middle*/
   border-style: solid;
   border-color: #aa8c2c;
   border-width: 1px 0 0 0;
-  border-radius: 20px;
+  /* border-radius: 20px; this gives the curve at the end of the line*/
 }
 
 hr:before {
