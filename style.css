@@ -129,8 +129,13 @@ nav {
   padding: 2% 8%;
   margin: auto;
 }
-/* hr styling the curved end */
 
+/* aligns text in the portfolio descriptions  */
+.description {
+  text-align: left;
+}
+
+/* hr styling the curved end */
 hr {
   margin-bottom: 1rem;
   overflow: visible; /* For IE */
