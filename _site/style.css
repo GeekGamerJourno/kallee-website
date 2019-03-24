@@ -78,12 +78,12 @@ a.nav-link {
   position: relative;
   transition:4s
 }
-a:hover{
+a.nav-link:hover{
  color: #040b0e;
  transition:1s;
 }
 
-a::after{
+a.nav-link::after{
  content: ' ';
  position:absolute;
  width:0;
@@ -92,7 +92,7 @@ a::after{
  transition:5s;
  left:50%;
 }
-a:hover::after {
+a.nav-link:hover::after {
  transition:1s;
  width:100%;
  left:0;
