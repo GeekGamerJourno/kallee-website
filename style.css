@@ -28,9 +28,14 @@ body {
 p{
   padding: 3%;
 }
-
+/* class for the portrait image */
 .portrait {
   border-radius: 50%;
+  width: 40%;
+  padding: 1%;
+}
+/* class for the portfolio prview image */
+.preview {
   width: 40%;
   padding: 1%;
 }
