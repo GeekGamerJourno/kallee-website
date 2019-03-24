@@ -56,6 +56,15 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-family: 'Lato', sans-serif;
+  color: #AA8C2C;
+  font-size: 1vw;
+  font-weight: 400;
+  text-align: left;
+}
+}
+
 a {
   text-decoration: none;
   color: #aa8c2c;
