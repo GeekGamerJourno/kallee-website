@@ -65,7 +65,7 @@ h3 {
 }
 }
 
-a {
+a.nav-link {
   text-decoration: none;
   color: #aa8c2c;
   /* border-radius: 5px;
